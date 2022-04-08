@@ -4,14 +4,17 @@
 # In[15]:
 
 
-pip install beautifulsoup4
+
 
 
 # In[12]:
 
 
 import requests
-
+import pandas as ms
+import json
+import pandas as pd
+from sqlalchemy import create_engine
 a="https://api.covidtracking.com/v1/us/daily.json "
 
 r=requests.get(a).json()
@@ -22,9 +25,7 @@ print(r)
 # In[13]:
 
 
-import requests
-import pandas as ms
-import json
+
 
 
 # In[14]:
@@ -63,15 +64,11 @@ df1.dtypes
 # In[19]:
 
 
-import pandas as pd
-from sqlalchemy import create_engine
+
 create=create_engine("mysql+pymysql://root:Shri1525@localhost/retail")
 
 
-# In[21]:
 
-
-pip install sqlalchemy
 
 
 # In[22]:
@@ -90,14 +87,12 @@ df5.to_sql('json_filet',create,if_exists='replace',index=False)
 # In[27]:
 
 
-pip install ipython
 
 
 # In[28]:
 
 
-import pandas as pd
-from sqlalchemy import create_engine
+
 create=create_engine("mysql+pymysql://root:Shri1525@localhost/retail")
 
 
@@ -112,31 +107,31 @@ df5.to_sql('json_filet',create,if_exists='replace',index=False)
 
 
 df1=pd.read_sql_table('json_filet',create)
-df1
+print(df1)
 
 
 # In[7]:
 
 
 df1['positive'].value_counts()
-
+print(df1)
 
 # In[9]:
 
 
 df2=pd.DataFrame(df1.groupby(['date'])['positive'].count().reset_index())
-df2
+print(df2)
 
 
 # In[12]:
 
 
 df1['hospitalizedCurrently'].value_counts()
-
+print(df1)
 
 # In[13]:
 
 
 df2=pd.DataFrame(df1.groupby(['date'])['hospitalizedCurrently'].count().reset_index())
-df2
+print(df2)
 
