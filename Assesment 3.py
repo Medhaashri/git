@@ -7,7 +7,7 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-
+from sqlalchemy import create_engine
 
 # In[ ]:
 
@@ -39,7 +39,7 @@ df
 
 
 df2=df[['Name','Party','Took Office','Left Office']]
-df2
+print(df2)
 
 
 # In[171]:
@@ -112,14 +112,14 @@ df2.drop(26)
 
 
 df2['Took Office'] = pd.to_datetime(df2['Took Office'], infer_datetime_format=True)
-df2
+print(df2)
 
 
 # In[183]:
 
 
 df2=df2.drop(26)
-df2
+print(df2)
 
 
 # In[184]:
@@ -132,21 +132,15 @@ df2.loc[[15],"Left_Office"]='10 November 1990'
 
 
 df2['Left Office'] = pd.to_datetime(df2['Left Office'], infer_datetime_format=True)
-df2
+print(df2)
 
 
 # In[186]:
 
-
-import pandas as pd
-from sqlalchemy import create_engine
 create=create_engine("mysql+pymysql://root:Shri1525@localhost/retail")
 
 
 # In[ ]:
-
-
-pip install sqlalchemy
 
 
 # In[ ]:
