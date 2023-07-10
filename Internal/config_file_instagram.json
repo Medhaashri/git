@@ -1,0 +1,28 @@
+{
+    "instagram":{
+        "access_token":"EAAROMeBzZAZB0BAKAVDX3eR1c50FOZBGkXPBezyB90dzN2QJdNOyFu0DgCziHjo88zdZA2BwXaBRfczZAHLfPXGtcbTBIFmM01t3qI0ihRx7nM6ui8MISUGUZBRfeCRDfog26lGKlHz2Ry10Cv5SQg8D2kmQZBSGnAkCbnT1LeY9A4FzZCshOnQVeFZBshJhPvsfJuJR33tZAlZBRZAiXtVfuzCl",
+        "url":"https://graph.facebook.com/v16.0/",
+        "parameters":"{followers_count,media_count,media{like_count, caption, comments_count, media_product_type, media_type, media_url, permalink}}",
+        "id":"17841448707448315",
+        "url_to_get_id":"/media?limit=808",
+        "Historyload_endpoint":"?fields=caption,comments_count,like_count,is_shared_to_feed,media_product_type,media_type,media_url,is_comment_enabled,permalink,timestamp",
+        "insights_url":"?fields=caption,comments_count,like_count,is_shared_to_feed,media_product_type,media_type,media_url,is_comment_enabled,permalink,timestamp",
+        "incremental_endpoint":"?fields=timestamp",
+        "days":"all",
+        "comments_insights_endpoint": "?fields=text,like_count,username,timestamp,replies,hidden",
+        "comment_id_endpoint":"/comments",
+        "views_endpoint":"/insights?metric=profile_views&period=day",
+        "location_endpoint":"/insights?metric=audience_gender_age,audience_locale,audience_country,audience_city&period=lifetime",
+        "reach_endpoint":"/insights?metric= engagement,impressions,reach,saved",
+        "reels_endpoint":"/insights?metric=plays,total_interactions",
+        "mediatype_endpoint":"/insights?metric=media_product_type",
+        "story_endpoint":"/stories",
+        "story_metrics_endpoint":"/insights?metric=follows,taps_forward,taps_back,replies,reach,exits,shares,total_interactions",
+        "aws_access_key":"AKIAUIQVGBPRYC5AWAMN",
+        "aws_secret_key":"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",
+        "online_followers_endpoint":"/insights?metric=online_followers&period=lifetime",
+        "followers_count_endpoint":"/insights?metric=follower_count&period=day"
+    
+    
+    }
+    }

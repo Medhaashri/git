@@ -1,0 +1,23 @@
+{
+    "instagram":{
+        "access_token":"EAAROMeBzZAZB0BALWhfDO9ugC1i7SLQZB1azvTTxzZBISg0MZCzTSxcfRtlgygvjht9CMBDD7Ed4fbZA24ZCv09G3MJP5ZAybDkoVRUK6ioG0ZCU8gzf6JrKxYTmjX10x8ZCOc1aKLUaX7Ysg1ROnQKmcjmfg2Plsy1PmpQcE46zw0JiyvK8P9WYY4D0ZB2Llq070dSuBEWsBHQqmiTsVSrszE4",
+        "url":"https://graph.facebook.com/v16.0/",
+        "parameters":"{followers_count,media_count,media{like_count, caption, comments_count, media_product_type, media_type, media_url, permalink}}",
+        "id":"17841448707448315",
+        "url_for_agilisium":"?fields=business_discovery.username(agilisium){followers_count,media_count,media{like_count, caption, comments_count, media_product_type, media_type, media_url, permalink}}&limit=100",
+        "url_to_get_id":"/media?limit=808",
+        "Historyload_endpoint":"?fields=caption,comments_count,like_count,is_shared_to_feed,media_product_type,media_type,media_url,is_comment_enabled,permalink,timestamp",
+        "insights_url":"?fields=caption,comments_count,like_count,is_shared_to_feed,media_product_type,media_type,media_url,is_comment_enabled,permalink",
+        "incremental_endpoint":"?fields=timestamp",
+        "days":"all",
+        "comments_insights_endpoint": "?fields=text,like_count,username,timestamp,replies,hidden",
+        "comment_id_endpoint":"/comments",
+        "views_endpoint":"/insights?metric=profile_views&period=day",
+        "location_endpoint":"/insights?metric=audience_gender_age,audience_locale,audience_country,audience_city&period=lifetime",
+        "reach_endpoint":"/insights?metric= engagement,impressions,reach,saved",
+        "reels_endpoint":"/insights?metric=plays,total_interactions",
+        "mediatype_endpoint":"/insights?metric=media_product_type"
+    
+    
+    }
+    }
